@@ -29,7 +29,19 @@
                 <li class="header__nav-list-item"><a href="#" class="header__nav-link">FEATURES</a></li>
                 <li class="header__nav-list-item"><a href="#" class="header__nav-link">PRESS</a></li>
                 <li class="header__nav-list-item"><a href="#" class="header__nav-link">PRICING</a></li>
-                <li class="header__nav-list-item"><a href="#" class="header__nav-link">CONTACT</a></li>
+                <li class="header__nav-list-item"><a href="#" class="header__nav-link"onclick="openWin()">CONTACT</a></li>
+              <script>
+                var myWindow;
+  
+                function openWin() {
+                  myWindow = window.open(
+                    "contact.html",
+                    "Contact",
+                    "width=600, height=800"
+                  );
+                }
+              </script>
+
             </ul>
         </nav>
         <button class="header__button header__button--hidden">Get a quote</button>
